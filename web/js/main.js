@@ -10,15 +10,15 @@ window.addEventListener('message', (event) => {
   switch (event.data.event) {
     case 'visible': {
       body.style.visibility = event.data.state ? 'visible' : 'hidden';
-      return (eye.style.fill = 'black');
+      return (eye.style.fill = 'white');
     }
 
     case 'leftTarget': {
-      return (eye.style.fill = 'black');
+      return (eye.style.fill = 'white');
     }
 
     case 'setTarget': {
-      eye.style.fill = '#cfd2da';
+      eye.style.fill = '#0a8c91';
 
       if (event.data.options) {
         for (const type in event.data.options) {
